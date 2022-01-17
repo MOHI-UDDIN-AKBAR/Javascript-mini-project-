@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Poppins:wght@200&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #e3e7e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1f2633;
+  min-height: 100vh;
+}
+.quiz-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.quiz-heading {
+  width: 400px;
+  max-width: 100%;
+  background-color: white;
+  box-shadow: 1px 1px 5px 0.3px rgb(184, 181, 181), -1px -1px 5px 0.3px grey;
+}
+@media screen and (max-width: 600px) {
+  .quiz-heading {
+    width: 290px;
+  }
+}
+.quiz-heading h2 {
+  padding: 10px;
+  text-align: center;
+  /* border: 1px solid #1f2633; */
+}
+#question {
+  margin-top: -0.2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+}
+#list {
+  list-style-type: none;
+  padding: 1rem;
+  margin-top: -3rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#list li {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 7px;
+  /* border: 1px solid green; */
+  text-align: left;
+}
+#list input[type="radio"] {
+  cursor: pointer;
+}
+/* input[type="radio"] {
+  display: none;
+}
+input[type="radio"] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-right: 0.3rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: gray;
+}
+input[type="radio"]:checked + *::before {
+  background: radial-gradient(blue 0%, blue 40%, transparent 50%, transparent);
+  border-color: #324b7a;
+} */
+#list label {
+  cursor: pointer;
+}
+.submit {
+  height: 3rem;
+  width: 100%;
+  text-align: center;
+  border: none;
+  background-color: #e84393;
+  border-radius: 0px 0px 5px 5px;
+  margin-bottom: -5px;
+  color: white;
+}
+.submit:hover {
+  background-color: #af2367;
+  cursor: pointer;
+}
+.add {
+  height: 80px;
+  max-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  /* border: 1px solid #1f2633; */
+  border-radius: 7px;
+  font-size: 1.5rem;
+  box-shadow: 1px 1px 2px 1px #7a8eb3 inset, -1px -1px 2px 1px #7a8eb3 inset;
+}

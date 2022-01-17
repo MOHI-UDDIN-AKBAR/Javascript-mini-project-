@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Poppins:wght@200&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #1f2633;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 4rem;
+  color: #b5b5b5;
+}
+form {
+  width: 300px;
+  /* padding: 3px; */
+  /* border: 2px solid red; */
+  box-shadow: 0 4px 10px #40495a;
+  background-color: #1f2633;
+}
+@media screen and (max-width: 400px) {
+  form {
+    width: 270px;
+  }
+}
+.input {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+}
+input::placeholder {
+  color: #a5a5a5;
+}
+ul {
+  margin-top: 0%;
+  width: 100%;
+  /* padding: 0.3rem; */
+  list-style-type: none;
+  margin-bottom: 0px;
+  background-color: #162b52;
+}
+li {
+  /* border: 2px solid blueviolet; */
+  padding: 3px;
+  padding-left: 5px;
+  font-size: 15px;
+  transform: translateX(-38px);
+}
+small {
+  margin-top: 5px;
+  font-size: 10px;
+}
+.completed {
+  text-decoration: line-through;
+  color: #b5b5b5;
+}

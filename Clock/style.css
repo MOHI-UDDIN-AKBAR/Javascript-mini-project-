@@ -1,0 +1,25 @@
+body {
+  box-sizing: border-box;
+  background-color: rgb(110, 79, 145);
+}
+.heading {
+  max-width: 140px;
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 170px;
+}
+.heading h1 {
+  text-align: center;
+  color: whitesmoke;
+}
+#para {
+  max-width: 130px;
+  text-align: center;
+  border: 1px solid #1f2633;
+  box-shadow: 2px 2px 7px 1px #252e3f inset, -2px -2px 7px 1px #364155 inset;
+  margin: auto;
+}
+#para p {
+  padding: 2px;
+  color: whitesmoke;
+}

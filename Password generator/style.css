@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Poppins:wght@200&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  height: 100vh;
+  background-color: #537895;
+  background-image: linear-gradient(315deg, #537895 0%, #204677 74%);
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Common (limited support) */
+}
+
+.pa-generator {
+  width: 270px;
+  background-color: rgb(25, 25, 80);
+  box-shadow: 0 0 3px 4px rgba(0, 0, 0, 0.1) inset;
+}
+.pa-generator h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 5px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.main {
+  margin-top: 0;
+  padding: 0rem 1rem;
+}
+.results,
+.length {
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5px;
+  margin: 3px;
+  margin-top: 0;
+}
+.results button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+.fas {
+  padding: 4px;
+}
+.results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  color: #1f2633;
+  font-weight: bold;
+  padding: 5px 9px;
+  box-shadow: 0 0 3px 4px rgba(0, 0, 0, 0.1);
+}
+.tools #length {
+  width: 50px;
+  height: 16px;
+}
+#length:focus {
+  outline: none;
+}
+.tools .length {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.uppercase,
+.lowercase,
+.number,
+.symbols {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 3px;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+input[type="checkbox"] {
+  cursor: pointer;
+}
+#ge-password {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+}

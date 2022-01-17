@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Poppins:wght@200&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1f2644;
+}
+
+.weather-design {
+  width: 280px;
+  height: 340px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 0 3px 4px rgba(0, 0, 0, 0.1) inset;
+}
+.location {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+.location input {
+  padding: 0.3rem 0rem;
+  padding: 5px;
+  border: none;
+  font-size: 15px;
+}
+input:focus {
+  outline: none;
+}
+.heading {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.heading img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+.heading h2 {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  color: #1f2633;
+  font-size: 2rem;
+}
+.heading .celsius small {
+  font-size: 25px;
+  font-weight: bold;
+  text-indent: -6px;
+}
+.heading .celsius .info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading .celsius img {
+  margin-top: 20px;
+  margin-left: 5px;
+  width: 70px;
+  height: 70px;
+}
+.heading .celsius {
+  position: absolute;
+  top: 75px;
+  text-align: center;
+  width: 100%;
+  color: #1f2644;
+  display: flex;
+  flex-direction: column;
+}
+.heading h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+.heading span {
+  font-size: 1.2rem;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+/* .upcoming {
+  width: 75%;
+  margin-bottom: 10px;
+} */
+/* .upcoming div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+}
+
+.upcoming div span {
+  margin-top: 0px;
+  font-size: 10px;
+  font-weight: bold;
+}
+.upcoming div h4 {
+  width: 40px;
+  border: 2px solid green;
+} */

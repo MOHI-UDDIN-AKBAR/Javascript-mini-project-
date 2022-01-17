@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Poppins:wght@200&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0px;
+  background-color: #1f2633;
+  color: whitesmoke;
+}
+
+.heading {
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+.heading h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0%;
+  font-size: 50px;
+  text-shadow: 2px 2px 3px red, -2px 1px 3px red;
+  animation: round 4s infinite;
+}
+@keyframes round {
+  0% {
+    text-shadow: 2px 2px 3px red, -2px 1px 3px red;
+  }
+  25% {
+    text-shadow: 2px 2px 3px rgb(21, 189, 211), -2px 1px 3px rgb(49, 142, 155);
+  }
+  50% {
+    text-shadow: 2px 2px 3px rgb(79, 143, 151), -2px 1px 3px rgb(91, 200, 214);
+  }
+  75% {
+    text-shadow: 2px 2px 3px rgb(21, 125, 211), -2px 1px 3px rgb(121, 120, 221);
+  }
+  100% {
+    text-shadow: 2px 2px 3px rgb(157, 21, 211), -2px 1px 3px rgb(155, 49, 107);
+  }
+}
+
+form {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+.search {
+  width: 200px;
+  margin-right: 0.5rem;
+}
+.input {
+  width: 200px;
+  padding: 0.5rem 1rem;
+  color: #1f2633;
+}
+input:focus {
+  outline: none;
+}
+.input::placeholder {
+  color: #a5a5a5;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.movieInfo {
+  position: relative;
+  width: 145px;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 3px;
+  box-shadow: 0px 3px 5px #4b5972;
+  overflow: hidden;
+}
+.img {
+  width: 100%;
+  height: 180px;
+}
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer kbd {
+  padding: 5px;
+  font-size: 15px;
+  font-style: inherit;
+}
+.footer span {
+  font-weight: bold;
+  padding: 3px;
+}
+.details::-webkit-scrollbar {
+  width: 0px;
+}
+.details {
+  position: absolute;
+  padding: 1.5rem;
+  max-height: 100%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 4px;
+  transform: translateY(200%);
+  overflow: auto;
+  transition: transform 1s;
+  background-color: white;
+  color: #1f2633;
+  text-align: center;
+  border-radius: 15px 15px 0px 0px;
+}
+.movieInfo .details h3 {
+  text-align: center;
+  font-weight: 550;
+}
+.movieInfo .details .overview {
+  margin-top: 4px;
+  width: 100%;
+  font-weight: bold;
+}
+.movieInfo:hover .details {
+  transform: translateY(0);
+}
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
+.yellow {
+  color: yellow;
+}
+.movieInfo:hover img {
+  opacity: 0.6;
+}
