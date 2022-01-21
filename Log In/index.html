@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <form id="form1">
+        <span><i class="fas fa-user"></i><input type="text" placeholder="Username" id="name" pattern="[A-Za-z]"><button
+                title="btn" id="btn1"><i class="fas fa-arrow-right"></i></button></span>
+    </form>
+    <form class="nonactive" id="form2">
+        <span><i class="fas fa-envelope"></i><input type="email" name="email" id="email" placeholder="email"><button
+                title="btn" id="btn2"><i class="fas fa-arrow-right"></i></button></span>
+    </form>
+    <form class="nonactive" id="form3">
+        <span><i class="fas fa-lock"></i><input type="password" name="password" id="password"
+                placeholder="password"><button title="btn" id="btn3"><i class="fas fa-arrow-right"></i></button></span>
+    </form>
+    <span id="thank" class="nonactive">Thank you</span>
+</body>
+
+</html>
