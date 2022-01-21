@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  height: 100vh;
+  @include flexCenter;
+  background-color: rgb(60, 60, 194);
+}
+.typing-test {
+  width: 500px;
+  padding: 40px 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+}
+.heading {
+  width: 100%;
+  text-align: right;
+  #{&}-tools {
+    display: flex;
+    flex-direction: column;
+    .container {
+      padding: 0.4rem 0.3rem;
+      font-weight: bold;
+    }
+  }
+}
+.text {
+  width: 100%;
+  // padding: 4px 9px;
+  text-align: justify;
+  margin-top: 4px;
+  font-size: 1.3rem;
+  margin:2rem 0 2rem 0;
+}
+.text-area {
+  width: 100%;
+  margin-top: 8px;
+  padding: 0.2rem;
+  textarea {
+    width: 100%;
+    resize: none;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    font-style: normal;
+    &::placeholder {
+      font-size: 1rem;
+    }
+  }
+}
+.btn {
+  float: right;
+  margin: 2px 5px;
+  button {
+    padding: 0.5rem 1rem;
+    border: 1px solid rgb(54, 54, 190);
+    border-radius: 5px;
+    background-color: rgb(57, 57, 172);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.1);
+  }
+}
+.results {
+    margin-top: 0;
+  width: 100%;
+  padding: 1rem;
+  @include flexCenter;
+  flex-direction: column;
+  & .result-text{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .result-tools {
+    @include flexCenter;
+    justify-content: space-between;
+    width: 100%;
+    padding:1rem;
+    span{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+  }
+}
+.success{
+  color:rgb(148, 209, 57);
+}
+.fail{
+  color:rgb(221, 33, 33);
+}
+.black{
+  color: black;
+}

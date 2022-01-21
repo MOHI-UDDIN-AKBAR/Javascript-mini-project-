@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing test</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="typing-test">
+        <div class="heading">
+            <div class="heading-tools">
+                <span class="time container">Time:<span id="time">0s</span></span>
+                <span class="mistake container">Mistakes:<span id="mistakes">0</span></span>
+            </div>
+        </div>
+        <div class="text" id="text">
+        </div>
+        <div class="text-area">
+            <textarea name="textarea" id="input-text" rows="4" title="textarea"
+                placeholder="type here the upper text"></textarea>
+        </div>
+        <div class="btn">
+            <button title="start" id="start-btn">Start Test</button>
+            <button title="stop" id="stop-btn">Stop Test</button>
+        </div>
+        <div class="results">
+            <span class="result-text">result</span>
+            <div class="result-tools">
+                <span class="accuracy">Accuracy: <span id="accuracy">0%</span></span>
+                <span class="speed">Speed: <span id="speed">0.0wpm</span></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
