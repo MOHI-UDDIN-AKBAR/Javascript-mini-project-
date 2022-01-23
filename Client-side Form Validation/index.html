@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="heading">
+            <h1>Create Account</h1>
+        </div>
+        <form id="form">
+            <div class="form-tools">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="arafat17" autocomplete="off">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-tools">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="arafat17@gmail.com" autocomplete="off">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small> </div>
+            <div class="form-tools">
+                <label for="password">password</label>
+                <input type="password" id="password" placeholder="password" autocomplete="off">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small> </div>
+            <div class="form-tools">
+                <label for="passeword2">password Check</label>
+                <input type="password" id="password2" placeholder="password two" autocomplete="off">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small> </div>
+            <button title="submit">submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  height: 100vh;
+  @include flexCenter;
+  background-color: #1f2633;
+}
+.container {
+  width: 370px;
+  background-color: white;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 10px;
+}
+.heading {
+  width: 100%;
+  h1 {
+    text-align: center;
+    padding: 5px;
+  }
+}
+form {
+  @include flexCenter;
+  flex-direction: column;
+  overflow: hidden;
+  .form-tools {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.7rem 1rem;
+    position: relative;
+    margin-top: 0;
+    // border: 2px solid green;
+    label {
+      font-size: 25px;
+      margin-bottom: 4px;
+      padding-top: 0;
+    }
+    input {
+      padding: 0.7rem;
+    }
+    i {
+      position: absolute;
+      top: 58px;
+      right: 35px;
+      visibility: hidden;
+    }
+    small {
+      position: absolute;
+      bottom: -9px;
+      visibility: hidden;
+    }
+  }
+  button {
+    width: 90%;
+    padding: 0.7rem 1rem;
+    border: none;
+    background-color: #1f2633;
+    font-size: 20px;
+    color: whitesmoke;
+    cursor: pointer;
+    margin-top: 15px;
+    &:hover {
+      background-color: #161b25;
+    }
+  }
+}
+.form-tools.success {
+  input {
+    border: 2px solid #2ecc71;
+  }
+  .fa-check-circle {
+    visibility: visible;
+    color: #21a558;
+  }
+}
+.form-tools.error {
+  input {
+    border: 2px solid #e74c3c;
+  }
+  .fa-exclamation-circle {
+    visibility: visible;
+    color: #e74c3c;
+  }
+  small {
+    visibility: visible;
+    color: #e74c3c;
+  }
+}
