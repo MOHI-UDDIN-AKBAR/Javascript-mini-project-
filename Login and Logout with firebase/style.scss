@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  height: 100vh;
+  background-color: #1f2633;
+  @include flexCenter;
+}
+.container {
+  width: 370px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3) inset;
+  padding: 10px;
+  .heading {
+    width: 100%;
+    margin-bottom: 0;
+    h1 {
+      text-align: center;
+      padding: 5px;
+    }
+  }
+  .active {
+    display: none;
+  }
+}
+
+.form {
+  @include flexCenter;
+  flex-direction: column;
+  overflow: hidden;
+  .form-tools {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.7rem 1rem;
+    position: relative;
+    margin-top: 0;
+    // border: 2px solid green;
+    label {
+      font-size: 25px;
+      margin-bottom: 4px;
+      padding-top: 0;
+    }
+    input {
+      padding: 0.7rem 1rem;
+      padding-left: 2.5rem;
+      font-size: 20px;
+      &:focus {
+        @extend input;
+      }
+    }
+    i {
+      position: absolute;
+      top: 61px;
+      right: 35px;
+      visibility: hidden;
+    }
+    small {
+      position: absolute;
+      bottom: -9px;
+      visibility: hidden;
+    }
+    .fa-user-circle {
+      position: absolute;
+      top: 61px;
+      left: 25px;
+      font-size: 18px;
+      width: 20px;
+      visibility: visible;
+      display: flex;
+    }
+    .fa-envelope {
+      @extend .fa-user-circle;
+    }
+    .fa-lock {
+      @extend .fa-user-circle;
+    }
+  }
+  .active {
+    display: none;
+  }
+  .show {
+    display: flex;
+  }
+
+  .buttons {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    button {
+      width: 150px;
+      padding: 0.8rem 1rem;
+      border: none;
+      background-color: #1f2633;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      &:hover {
+        background-color: #283958;
+      }
+    }
+  }
+}
+
+.form-tools.success {
+  input {
+    border: 2px solid #2ecc71;
+  }
+  .fa-check-circle {
+    visibility: visible;
+    color: #21a558;
+  }
+}
+.form-tools.error {
+  input {
+    border: 2px solid #e74c3c;
+  }
+  .fa-exclamation-circle {
+    visibility: visible;
+    color: #e74c3c;
+  }
+  small {
+    visibility: visible;
+    color: #e74c3c;
+  }
+}
+.logOut {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  button {
+    width: 150px;
+    padding: 0.8rem 1rem;
+    border: none;
+    background-color: #1f2633;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    &:hover {
+      background-color: #283958;
+    }
+  }
+}
